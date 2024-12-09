@@ -34,3 +34,8 @@ a{
 img{
     max-width: 25vw;
 }
+.contact-form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
