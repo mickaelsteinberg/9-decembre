@@ -34,4 +34,8 @@ ul, li {
     header {
         padding: 10px 20px;
     }
+    ul {
+        flex-direction: column;
+        position: absolute;
+    }
 }
