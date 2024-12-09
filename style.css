@@ -20,3 +20,17 @@ a{
         display: block;
     }
   }
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.card{
+    display: flex;
+    flex-shrink: 3;
+    flex-direction: column;
+}
+
+img{
+    max-width: 25vw;
+}
