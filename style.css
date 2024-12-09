@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
 
 }
 
@@ -26,33 +27,89 @@ body {
 /*** Galerie de cards ***/
 
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    
 }
 
-.card {}
+.card {
+margin: 40px;
+width: 250px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+box-shadow: 0 4px 6px grey;
+border-radius: 3px;
+
+}
+
+.card button{
+    padding: 4px;
+    border: none;
+    background-color: thistle;
+    width: 120px;
+    border-radius: 3px;
+}
 
 .card button:hover {
-    background-color: blueviolet;
+    background-color:blueviolet;
     color: white;
+    cursor: pointer;
+}
+
+.card img{
+    width: 250px;
+    border-radius: 3px;
 }
 
 
+/*** Formulire aligner **/
 
+.contact-form{
+display: flex;
+flex-direction: row;
 
+justify-content: center;
 
+}
+
+.form-group{
+
+display: flex;
+justify-content: space-between;
+margin: 20px 50px;
+}
+
+.form-group button{
+background-color: thistle;
+border-radius: 2px;
+}
+
+.form-group input{
+    display: flex;
+    flex-direction: row;
+    
+}
 
 
 @media(max-width:770px) {
-    .navbar {
-
-        flex-wrap: nowrap;
-    }
 
     .nav-links {
         display: block;
-        flex-wrap: nowrap;
     }
-
+    .contact-form{
+        display: block;
+        flex-direction: column;
+    }
+    .form-group{
+        align-items: center;
+    }
+    
 
 }
