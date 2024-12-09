@@ -1,0 +1,38 @@
+
+body{
+    display: flex;
+}
+
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+    display: flex; 
+    
+}
+
+.logo{
+    object-fit: contain;
+}
+
+.nav-links{
+list-style: none;
+display: flex;
+flex-direction: row;
+
+
+}
+
+.nav-links li{
+    padding: 10px 50px;
+}
+
+@media(max-width:770px){
+.navbar{
+    display: block;
+    flex-wrap: nowrap;
+}
+.nav-links{
+    display: block;
+    flex-wrap: nowrap;
+}
+}
