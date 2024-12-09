@@ -1,4 +1,19 @@
-/* Exo 1 */
+/* Exo A */
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #F6F8FA;
+}
+
+.head{
+    background-color: burlywood;
+    padding: 30px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,7 +39,7 @@ nav ul {
 }
 
 nav a:hover {
-    color: lightsalmon;
+    color: goldenrod;
 }
 
 .menuBurger {
@@ -33,11 +48,10 @@ nav a:hover {
     cursor: pointer;
   }
 
-  .menuBurger span {
+.menuBurger span {
     background-color: #262626;
     height: 3px;
     width: 25px;
-
   }
 
 /* Responsive */
@@ -69,17 +83,69 @@ nav a:hover {
     }
 }
 
-/* Exo 2 */
+/* Exo B */
 
-section {
-    border: 4px solid rgb(127, 106, 210);
-    height: 100vh;
+.gallery {
+    border: 4px solid rgb(115, 114, 120);
+    height: 90vh;
+    max-width: 1200;
     border-radius: 10px;
-    padding: 5%;
+    gap: 10px;
     background-color: rgb(214, 208, 208);
     display: flex;
+    flex-direction: column;
 }
 
 .card {
+    width: 250px;
+    height: 337px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 4px solid goldenrod;
+    border-radius: 15px;
+    font-family: sans-serif;
+    color: gray;
+}
+
+.block1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block2 {
+    display: flex;
+    justify-content: space-between;  
+}
+
+button {
+    background-color: goldenrod;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+    width: 100px;
+    height: 30px;
+}
+
+.card:hover {
+    background-color: goldenrod;
+    opacity: 80%;
+}
+
+/* Exo C */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-group {
+    gap: 30px;
+    display: flex;
+    font-family: sans-serif;
     
 }
