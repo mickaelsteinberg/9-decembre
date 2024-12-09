@@ -1,6 +1,6 @@
 # 9-decembre
 
-## 1. Exercices Flexbox (13h45-15h15)
+## 1. Exercices Flexbox 
 
 ### A. Barre de navigation responsive (30-45 min)
 
@@ -71,7 +71,7 @@
 - Gérer les espacements uniformément
 - Adapter en version mobile (colonnes)
 
-## 2. Exercices Grid (15h30-17h00)
+## 2. Exercices Grid 
 
 ### A. Grille basique (30 min)
 
