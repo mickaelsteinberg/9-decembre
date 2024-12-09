@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacement entre les liens */
+}
+
+/* Media = mobiles */
+@media (max-width: 768px) { 
+    .nav-links { 
+        display: flex; /* Affiche liens en colonne */ 
+        flex-direction: column; 
+        align-items: center; /* Centre liens horizontalement */ 
+    } 
+    .nav-links li { 
+        margin-bottom: 10px; /* Ajoute de l'espace entre chaque élément de liste */ 
+    } 
+    .boutonburger { 
+        display: block; /* Afficher le bouton burger sur mobile et mettre à l'intérieur de la responsive */ 
+    }   
+}
+
+.boutonburger { 
+    font-size: 24px; 
+    cursor: pointer; 
+    display: none; /* Sensé ne pas s'afficher sur PC */ 
+}
+
