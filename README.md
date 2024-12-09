@@ -27,13 +27,7 @@
 ### B. Galerie de cards (45 min)
 
 ```html
-<section class="gallery">
-  <div class="card">
-    <img src="placeholder.jpg" alt="image">
-    <h3>Titre</h3>
-    <p>Description</p>
-    <button>En savoir plus</button>
-  </div>
+
   <!-- Répéter pour 6 cards -->
 </section>
 ```
