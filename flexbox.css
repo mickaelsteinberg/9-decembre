@@ -49,36 +49,14 @@ li {
 /* exo 1 - B */
 
 .gallery {
-    display: flex;
+    flex-wrap: wrap;
+    display: grid;
     gap : 10px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.card1 {
+.card {
     margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.card2 {
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.card3 {
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.card4 {
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.card5 {
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.card6 {
-    margin-top: 20px;
-    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 5px;
 }
