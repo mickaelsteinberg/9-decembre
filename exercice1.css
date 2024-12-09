@@ -1,0 +1,157 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.barre-nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.liens-nav {
+    list-style: none;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.liens-nav li {
+    margin-left: 20px;
+}
+
+.liens-nav a {
+    color : grey;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+    .liens-nav {
+        flex-direction: column; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .liens-nav.nav-active {
+        display: flex; 
+    }
+
+    .liens-nav li {
+        margin: 10px; 
+    }
+}
+
+
+.gallerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.carte {
+    background: white;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.carte img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.carte h3 {
+    margin: 10px;
+}
+
+.carte p {
+    text-align: center;
+    color: grey;
+}
+
+.carte button {
+    background: blue;
+    color: wheat;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.carte button:hover {
+    background: blue;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carte {
+        width: calc(50% - 20px);
+    }
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    background: white;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .form-group label {
+        margin-bottom: 5px;
+    }
+}
