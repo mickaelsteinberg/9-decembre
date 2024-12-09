@@ -29,20 +29,19 @@
     
     display: flex;
     justify-content: center;
-    
-    
-    
+    gap: 20px;
+    flex-wrap: wrap;
+    width: calc(50.333% - 20px);
 }
 .card{
+    
     background-color: #f4bcbc;
       border: 1px solid #ddd;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 15px;
+      padding: 20px;
       text-align: center;
       margin: 10px;
+      flex-wrap: wrap;
        
-    
-      
-    
 }
