@@ -1,0 +1,60 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+.nav-links li{
+    padding: 10px;
+    margin: 10px;
+}
+
+.logo{
+    justify-content: center ;
+    display: flex;
+}
+
+.gallery{  
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.card{
+    
+    background-color: #f4bcbc;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      flex-wrap: wrap;
+      width: 20%;
+       
+}
+
+.contact-form{
+    display: flex;
+    gap: 30px;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+       flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
