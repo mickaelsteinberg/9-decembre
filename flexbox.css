@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav {
+    background-color: rgba(221, 161, 94, 1);
+    height: 10vh;
+}       
+
+.logo {
+    padding-left: 20px;
+    padding-top: 15px;
+    width: 200px;
+    display: flex;
+    vertical-align: middle;
+}
+
+ul, .nav-links {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+.nav-links, li, a {
+    display: flex;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
