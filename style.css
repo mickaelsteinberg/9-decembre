@@ -1,0 +1,20 @@
+.grid-container{
+    display: flex;
+    flex-wrap: wrap; /* Permet de revenir à la ligne */
+      justify-content: space-between; /* Pour répartir l'espace entre les cartes */
+       /* Espacement entre les cartes */
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 2, 1fr;
+      gap: 20px;
+      
+}
+
+.grid-item{
+    border: 1px solid #ddd;
+      padding: 25px;
+      text-align: center;
+      background-color: rgb(200, 170, 80);
+
+}
+
