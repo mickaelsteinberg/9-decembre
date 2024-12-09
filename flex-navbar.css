@@ -1,7 +1,7 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
+    padding: 50px;
     background-color: coral;
 }
 .logo{
@@ -11,11 +11,17 @@
 .nav-links{
     display: flex;
     list-style: none;
-    }
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
 li{
     float: left;
     margin-left: 2em;
-    margin-right: 2em;
+    margin-right: 1em;
 }
 nav a{
     text-decoration: none;
@@ -31,7 +37,30 @@ nav a{
 }
 .gallery{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     gap: 2em;
-    margin-left: 2em;
+}
+.gallery>* {
+    flex: 1 1 300px;
+}
+
+.card{
+    border: 2px solid black;
+    margin: 2em;
+    text-align: center;
+}
+.card:hover{
+    background-color: gold;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.form-group{
+    flex-direction: row;
+    margin:1em;
 }
