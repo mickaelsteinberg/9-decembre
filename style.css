@@ -1,0 +1,56 @@
+.nav-links, .navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.nav-links li {
+padding: 2vw;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.img{
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .nav-links{
+        display: none;
+    }
+    .img{
+        display: block;
+    }
+    .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap; 
+}
+.card{
+    display: flex;
+    flex-shrink: 3;
+    flex-direction: column;
+}
+
+img{
+    max-width: 25vw;
+}
+.contact-form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.card:hover{
+    opacity: 0.8;
+}
