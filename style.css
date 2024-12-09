@@ -1,41 +1,7 @@
-.nav-links, .navbar{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    
-
-}
-.nav-links li {
-padding: 2vw;
-
-}
-a{
-    text-decoration: none;
-    color:black;
-}
-
-@media screen and (max-width: 368px) {
-    .nav-links{
-        display: block;
-    }
-  }
-
-.gallery{
-    display: flex;
-    flex-wrap: wrap; 
-}
-.card{
-    display: flex;
-    flex-shrink: 3;
-    flex-direction: column;
-}
-
-img{
-    max-width: 25vw;
-}
-.contact-form{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 }
