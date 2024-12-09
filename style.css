@@ -4,6 +4,8 @@ body{
     box-sizing: border-box;
 }
 
+/* Barre de navigation responsive */
+
 .logo .nav-links{
     justify-content: space-between;
     align-items: center;
@@ -32,6 +34,8 @@ a:hover
     color: rgb(204, 84, 154);
 }
 
+/*   B. Galerie de cards  */
+
 .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +51,22 @@ a:hover
 .card img {
     width: 100%;
     height: auto;
+}
+
+/*  Formulaire aligné  */
+
+.contact-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 20px;
 }
 
 
@@ -78,5 +98,10 @@ a:hover
     .card {
         width: 80%;
     }
+    .contact-form{
+        display: block;
+        flex-direction: column;
+    }
 
 }
+
