@@ -6,7 +6,7 @@
 .nav-links {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Espacement entre les liens */
+    gap: 20px; /* Espace entre les liens */
 }
 
 /* Media = mobiles */
@@ -17,7 +17,7 @@
         align-items: center; /* Centre liens horizontalement */ 
     } 
     .boutonburger { 
-        display: block; /* Afficher le bouton burger sur mobile et mettre à l'intérieur de la responsive */ 
+        display: block; /* Afficher le bouton burger sur mobile et mettre à l'intérieur de la responsive mais marche pas*/ 
     } 
     .form-group {
         flex-direction: column;
@@ -72,4 +72,35 @@
     flex: 2; /* Comme flex: 1; mais ils prennent moins d'espace */
     border: 1px solid #a8a8a8;
 }
+
+.grid-container {
+    display: grid; /* Fait les grilles façon */
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de même taille = 2*1 */
+    grid-template-rows: repeat(2, 1fr); /* Deux lignes de même taille 2*1 */
+    gap: 20px; /* Espace entre les grilles */
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    border: 1px solid #8a8a8a
+}
+.grid-container2 {
+    display: grid; /* Fait les grilles façon */
+    grid-template-columns: repeat(3, 1fr); /* Deux colonnes de même taille = 2*1 */
+    grid-template-rows: repeat(3, 1fr); /* Deux lignes de même taille 2*1 */
+    gap: 20px; /* Espace entre les grilles */
+    margin-top: 20px;
+}
+
+.grid-item2 {
+    background-color: #ddd;
+    padding: 20px;
+    border: 1px solid #8a8a8a
+}
+
+
+
+
 
