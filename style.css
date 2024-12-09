@@ -45,3 +45,14 @@
       flex-wrap: wrap;
        
 }
+
+.contact-form{
+    display: flex;
+    gap: 30px;
+    flex-direction: column; 
+}
+
+.form-group{
+   flex-direction: column; 
+}
+
