@@ -1,0 +1,66 @@
+/* Exo 1 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {  
+    list-style: none;   
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #262626;
+    list-style: none; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+nav a:hover {
+    color: lightsalmon;
+}
+
+.menuBurger {
+    display: none; 
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menuBurger span {
+    background-color: #262626;
+    height: 3px;
+    width: 25px;
+
+  }
+
+/* Responsive */
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menuBurger {
+        display: flex;
+        justify-items: flex-end;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+
+    .test {
+        display: flex;
+        justify-content: end;
+    }
+
+}
