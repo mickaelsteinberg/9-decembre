@@ -1,0 +1,5 @@
+.card {justify-items: center;}
+.gallery{ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+background-color: rgb(126, 175, 159);
+grid-auto-rows: 200px;}
