@@ -46,3 +46,7 @@ img{
     justify-content: space-evenly;
     flex-direction: column;
 }
+
+.card:hover{
+    opacity: 0.8;
+}
