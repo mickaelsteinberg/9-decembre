@@ -15,8 +15,15 @@ a{
     color:black;
 }
 
-@media screen and (max-width: 368px) {
+.img{
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
     .nav-links{
+        display: none;
+    }
+    .img{
         display: block;
     }
   }
