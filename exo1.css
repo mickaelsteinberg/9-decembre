@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+@media(max-width: ){
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        flex-basis: 50%;
+    }
+}
