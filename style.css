@@ -1,38 +1,58 @@
-
-body{
+body {
     display: flex;
+
 }
 
-.navbar{
+.navbar {
     align-items: center;
     justify-content: space-between;
-    display: flex; 
-    
-}
-
-.logo{
-    object-fit: contain;
-}
-
-.nav-links{
-list-style: none;
-display: flex;
-flex-direction: row;
-
+    display: flex;
 
 }
 
-.nav-links li{
+.logo {}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links li {
     padding: 10px 50px;
 }
 
-@media(max-width:770px){
-.navbar{
-    display: block;
-    flex-wrap: nowrap;
+
+/*** Galerie de cards ***/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.nav-links{
-    display: block;
-    flex-wrap: nowrap;
+
+.card {}
+
+.card button:hover {
+    background-color: blueviolet;
+    color: white;
 }
+
+
+
+
+
+
+
+@media(max-width:770px) {
+    .navbar {
+
+        flex-wrap: nowrap;
+    }
+
+    .nav-links {
+        display: block;
+        flex-wrap: nowrap;
+    }
+
+
 }
