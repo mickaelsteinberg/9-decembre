@@ -1,3 +1,5 @@
+@import url(stylegrid.css);
+
 body {
     display: flex;
     flex-direction: column;
@@ -98,6 +100,8 @@ border-radius: 2px;
 }
 
 
+
+
 @media(max-width:770px) {
 
     .nav-links {
@@ -113,3 +117,6 @@ border-radius: 2px;
     
 
 }
+
+
+@import url(stylegrid.css);
