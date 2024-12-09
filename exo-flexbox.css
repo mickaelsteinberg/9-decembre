@@ -28,7 +28,6 @@ nav a:hover {
 }
 
 .menuBurger {
-    display: none; 
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -51,12 +50,18 @@ nav a:hover {
     }
     .menuBurger {
         display: flex;
-        justify-items: flex-end;
     }
 
     .nav-links {
         display: none; 
+        position: absolute;
+        top: 60px;
+        right: 20px;
     }
+
+    .nav-links.active {
+        display: flex; 
+      }
 
     .test {
         display: flex;

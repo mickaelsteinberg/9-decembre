@@ -9,6 +9,7 @@
 <body>
 
 <footer>
+    <!-- Footer -->
     <nav class="navbar">
         <div class="logo">Logo</div>
         <ul class="nav-links">
@@ -18,7 +19,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-
+ <!-- Menu burger -->
       <div class="test">
       <div class="menuBurger">
         <span></span>
@@ -27,10 +28,17 @@
     </div>
     </div>
 
-
-    
+    <script>
+        const menuBurger = document.querySelector('.menuBurger');
+        const navMenu = document.querySelector('.nav-links');
+      
+        menuBurger.addEventListener('click', () => {
+          navMenu.classList.toggle('active'); 
+        });
+      </script>
 
 </footer>
-    
+
+
 </body>
 </html>
