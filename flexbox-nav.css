@@ -16,9 +16,6 @@
         flex-direction: column; 
         align-items: center; /* Centre liens horizontalement */ 
     } 
-    .nav-links li { 
-        margin-bottom: 10px; /* Ajoute de l'espace entre chaque élément de liste */ 
-    } 
     .boutonburger { 
         display: block; /* Afficher le bouton burger sur mobile et mettre à l'intérieur de la responsive */ 
     }   
@@ -30,3 +27,25 @@
     display: none; /* Sensé ne pas s'afficher sur PC */ 
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux cards de se placer sur plusieurs lignes si nécessaire donc pour LA RESPONSIVE*/
+    gap: 20px; /* Ajoute un espace entre les cards */
+    
+}
+
+.card {
+    box-sizing: border-box; /* Inclut la bordure et le padding dans la taille totale de la card */
+    border: 1px solid #ddd; /* Bordure */
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Dispose verticalement */
+    flex: 1 1 calc(33.333% - 20px); /* Pour les aligner par 3 */
+}
+
+/* Effets hover */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour l'effet de survol */
+    transform: translateY(-5px); /* Déplace légèrement la card vers le haut pour l'effet de survol */
+}
