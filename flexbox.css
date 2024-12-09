@@ -1,0 +1,104 @@
+/* exo 1 - A */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: rgba(221, 161, 94, 1);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}       
+
+.logo {
+    padding-left: 20px;
+    width: 200px;
+    display: flex;
+    vertical-align: middle;
+}
+
+ul, .nav-links {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+@media (max-width: 640px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    li {
+        flex-direction: column;
+    }
+}
+
+.nav-links, li, a  {
+    display: flex;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* exo 1 - B */
+
+.gallery {
+    flex-wrap: wrap;
+    gap : 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.gallery>* {
+    flex: 1 1 300px;
+  }
+
+.card {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.card1 {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: rgba(221, 161, 94, .5);
+}
+
+.card1:hover {
+    background-color: rgba(221, 161, 94, .5);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+/* exo 1 - C */
+
+.contact-form {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
