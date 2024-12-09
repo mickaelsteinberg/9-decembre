@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo flexbox</title>
+    <link rel="stylesheet" href="exo-flexbox.css">
+</head>
+<body>
+<!-- Exo A -->
+<footer class="head">
+    <!-- Footer -->
+    <nav class="navbar">
+        <div class="logo"><p>Logo</p></div>
+        <ul class="nav-links">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+ <!-- Menu burger -->
+      <div class="test">
+      <div class="menuBurger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+
+    <script>
+        const menuBurger = document.querySelector('.menuBurger');
+        const navMenu = document.querySelector('.nav-links');
+      
+        menuBurger.addEventListener('click', () => {
+          navMenu.classList.toggle('active'); 
+        });
+      </script>
+
+</footer>
+<!-- Exo B -->
+<br><br>
+<section class="gallery">
+    <div class="block1">
+    <div class="card">
+      <img src="Images/bitcoin.webp" alt="image" width="100" height="100">
+      <h3>Titre</h3>
+      <p>Description</p>
+      <button>En savoir plus</button>
+    </div>
+    <!-- Répéter pour 6 cards -->
+
+    <div class="card">
+        <img src="Images/bitcoin.webp" alt="image" width="100" height="100">
+        <h3>Titre</h3>
+        <p>Description</p>
+        <button>En savoir plus</button>
+      </div>
+
+      <div class="card">
+        <img src="Images/bitcoin.webp" alt="image" width="100" height="100">
+        <h3>Titre</h3>
+        <p>Description</p>
+        <button>En savoir plus</button>
+      </div>
+    </div>
+
+    <div class="block2">
+      <div class="card">
+        <img src="Images/bitcoin.webp" alt="image" width="100" height="100">
+        <h3>Titre</h3>
+        <p>Description</p>
+        <button>En savoir plus</button>
+      </div>
+
+      <div class="card">
+        <img src="Images/bitcoin.webp" alt="image" width="100" height="100">
+        <h3>Titre</h3>
+        <p>Description</p>
+        <button>En savoir plus</button>
+      </div>
+
+      <div class="card">
+        <img src="Images/bitcoin.webp" alt="image" width="100" height="100">
+        <h3>Titre</h3>
+        <p>Description</p>
+        <button>En savoir plus</button>
+      </div>
+    </div>
+
+  </section>
+
+  <br><br>
+  <!-- Exo C -->
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" id="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email">
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+    </div>
+    <button type="submit">Envoyer</button>
+  </form>
+
+</body>
+</html>
