@@ -148,7 +148,6 @@
 .header {
     grid-area: header;
     background-color: #e77700;
-    color: white;
     padding: 50px;
     margin-top: 30px;
     text-align: center;
@@ -171,7 +170,6 @@
 .footer {
     grid-area: footer;
     background-color: #4CAF50;
-    color: white;
     padding: 50px;
     text-align: center;
   }
@@ -180,4 +178,8 @@
     .blog-layout {
         flex-direction: column;
     }
+}
+
+.page-container {
+    display: grid;
 }
