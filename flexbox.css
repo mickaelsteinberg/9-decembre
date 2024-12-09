@@ -1,17 +1,20 @@
+/* exo 1 - A */
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    
 }
 
 nav {
     background-color: rgba(221, 161, 94, 1);
-    height: 10vh;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
 }       
 
 .logo {
     padding-left: 20px;
-    padding-top: 15px;
     width: 200px;
     display: flex;
     vertical-align: middle;
@@ -25,10 +28,57 @@ li {
     float: left;
 }
 
-.nav-links, li, a {
+@media (max-width: 640px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    li {
+        flex-direction: column;
+    }
+}
+
+.nav-links, li, a  {
     display: flex;
     color: black;
     text-align: center;
     text-decoration: none;
     margin-right: 20px;
+}
+
+/* exo 1 - B */
+
+.gallery {
+    display: flex;
+    gap : 10px;
+}
+
+.card1 {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card3 {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card4 {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card5 {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card6 {
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
