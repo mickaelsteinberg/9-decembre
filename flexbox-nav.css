@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: column; /* Dispose verticalement */
     flex: 1 1 calc(33.333% - 20px); /* Pour les aligner par 3 */
+    align-items: center; /* Centre les éléments */
 }
 
 /* Effets hover */
@@ -79,28 +80,59 @@
     grid-template-rows: repeat(2, 1fr); /* Deux lignes de même taille 2*1 */
     gap: 20px; /* Espace entre les grilles */
     margin-top: 20px;
+    padding: 40px;
 }
 
 .grid-item {
-    background-color: #ddd;
+    background-color: #ffcceb;
     padding: 20px;
-    border: 1px solid #8a8a8a
+    border: 1px solid #000000;
 }
 .grid-container2 {
     display: grid; /* Fait les grilles façon */
     grid-template-columns: repeat(3, 1fr); /* Deux colonnes de même taille = 2*1 */
     grid-template-rows: repeat(3, 1fr); /* Deux lignes de même taille 2*1 */
     gap: 20px; /* Espace entre les grilles */
-    margin-top: 20px;
+    padding: 40px;
 }
 
 .grid-item2 {
-    background-color: #ddd;
+    background-color: #ffcceb;
     padding: 20px;
-    border: 1px solid #8a8a8a
+    border: 1px solid #000000
+}
+
+/* Partie avec CHATGPT */
+.blog-layout {
+    display: grid;grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer"; /* Créer une mise en disposition en mode la c'est comme ci cétait 3 partie de la page*/
+    gap: 20px; /* Espace entre les éléments */
+    padding: 40px;
+}
+
+/* Définir les zones */
+.header {
+    grid-area: header; /* il va prendre la position du header la où j'ai fais ma mise en disposition grid-template-areas */
 }
 
 
+.main-content {
+    grid-area: main;
+    display: grid; /* Pour séparer aussi façon je crois */
+    gap: 20px; /* Séparer des autres / ne pas coller */
+}
 
+.footer {
+    grid-area: footer; /* Position qu'il va prendre ; la il prend le footer par exemple */
+}
+
+/* Style pour tous les éléments */
+header, footer, .sidebar, .main-content article {
+    background-color: #ffcceb;
+    border: 1px solid #000000;
+    padding: 20px;
+}
 
 
