@@ -22,18 +22,25 @@
 section.gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 50px;
     justify-content: space-between;
 }
 
 .card {
     width: 25%;
-    /* padding: 30px; */
-    background-color: #ac8383;
+    background-color: #ccd0d0;
     border-radius: 50px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     justify-items: center;
     padding: 10px;
+}
+
+.card:hover {
+    background-color: #ccd0d0bb;
+}
+
+.card img {
+    border-radius: 50%;
 }
 
 
