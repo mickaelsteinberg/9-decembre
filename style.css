@@ -1,0 +1,57 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo .nav-links{
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+li{
+    display: inline;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a:hover 
+.logo:hover {
+    color: rgb(204, 84, 154);
+}
+
+
+@media(max-width:370px){
+    
+    a{
+        padding:5px;
+    }
+
+    nav{
+        display: inline;
+    }
+    
+    li{
+        margin: 0px;
+    }
+
+    a:hover, 
+    .logo:hover {
+    color: rgb(151, 62, 139);
+}
+
+
+
+}
