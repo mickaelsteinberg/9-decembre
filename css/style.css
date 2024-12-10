@@ -100,6 +100,20 @@ border-radius: 2px;
 }
 
 
+.header img{
+    height: 100%;
+    width: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8vw 8vw;
+}
+
+
+
 
 
 @media(max-width:770px) {
