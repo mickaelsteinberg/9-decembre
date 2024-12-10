@@ -5,6 +5,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="page-container">
+
+<header class="header">
 <nav class="navbar">
     <div class="logo">Logo</div>
     <ul class="nav-links">
@@ -14,7 +18,9 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
+</header>
 
+<main class="content">
   <section class="gallery">
     <div class="card">
       <img src="sunflower.jpg" alt="image">
@@ -57,8 +63,15 @@
       <p>Description</p>
       <button>En savoir plus</button>
     </div>
-    
+  </main>
   </section>
+
+  <aside class="sidebar">
+    <div class="widget">
+      <div>Widget 1</div>
+      <div>Widget 2</div>
+    </div>
+  </aside>
 
   <form class="contact-form">
     <div class="form-group">
@@ -96,27 +109,17 @@
   </div>
 
   <div class="blog-layout">
-    <header class="header">Header</header>
-    <aside class="sidebar">Sidebar</aside>
-    <main class="main-content">
+    <header class="header-1">Header</header>
+    <aside class="sidebar-1">Sidebar</aside>
+    <main class="main-content-1">
       <article>Article principal</article>
       <article>Article secondaire</article>
     </main>
-    <footer class="footer">Footer</footer>
+    <footer class="footer-1">Footer</footer>
   </div>
+  <footer class="footer">Footer</footer>
+</div>
 
-  <div class="page-container">
-    <header class="header">
-      <nav class="navbar"><!-- Navigation avec Flexbox --></nav>
-    </header>
-    <main class="content">
-      <div class="cards-grid"><!-- Cards avec Grid --></div>
-    </main>
-    <aside class="sidebar">
-      <div class="widget"><!-- Widgets avec Flexbox --></div>
-    </aside>
-    <footer class="footer"><!-- Footer avec Flexbox --></footer>
-  </div>
 
 </body>
 </html>
