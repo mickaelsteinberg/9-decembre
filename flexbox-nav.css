@@ -1,0 +1,52 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Espace entre le logo et les liens */
+    align-items: center; /* Centrer verticalement */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Liens */
+  .nav-links {
+    list-style: none;
+    display: flex; /* Aligner horizontalement les liens */
+    gap: 20px; /* Espacement entre les éléments */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f0a500; /* Couleur de survol */
+  }
+  
+  /* Bouton burger (masqué en desktop) */
+  .burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
