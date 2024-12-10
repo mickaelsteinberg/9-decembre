@@ -1,0 +1,15 @@
+.logo{justify-content: left; } 
+.navbar .nav-links {justify-content: space-between;
+    display: flex; 
+    flex-direction : row;
+      }
+      
+      .contact-form { display: flex;
+        align-items: center;
+        justify-content:space-between; 
+      }
+      #id {flex-direction: row ; align-items:center; justify-content: center; display: flex;
+        align-items: center;}
+         @media screen and (max-width: 400px) {
+          .contact-form{flex-direction: column;}
+        }
