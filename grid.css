@@ -1,0 +1,133 @@
+.grid-container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    height: 50px;
+}
+
+.grid-container2 {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+/* exo 2 - B */
+
+.blog-layout {
+    gap: 5px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main-content sidebar"
+        "footer footer";
+}
+
+.header {
+    border: 1px solid black;
+    grid-area: header;
+    height: 50px;
+}
+
+.sidebar {
+    border: 1px solid black;
+    grid-area: sidebar;
+    width: 200px;
+}
+
+.main-content {
+    border: 1px solid black;
+    grid-area: main-content;
+}
+
+.footer {
+    border: 1px solid black;
+    grid-area: footer;
+    height: 50px;
+}
+
+/* Exo 2 - C */
+
+/* Conteneur principal */ 
+.page-container { 
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header" 
+        "content sidebar" 
+        "footer footer"; 
+    gap: 20px;   
+    border: 1px solid black;
+    margin-top: 20px; 
+    padding: 20px; 
+    border-radius: 5px;
+    text-align: center; 
+} 
+
+/* Éléments Grid */ 
+.header1 { 
+    grid-area: header; 
+    border: 1px solid black;
+    background-color: bisque;
+    padding: 10px; 
+    border-radius: 5px; 
+} 
+
+.content { 
+    grid-area: content; 
+    border: 1px solid black;
+    background-color: bisque;
+    padding: 20px; 
+    border-radius: 5px; 
+} 
+
+.sidebar1 { 
+    grid-area: sidebar; 
+    border: 1px solid black;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 200px; 
+} 
+
+.footer1 { 
+    grid-area: footer; 
+    border: 1px solid black;
+    background-color: bisque; 
+    padding: 10px; 
+    border-radius: 5px; 
+} 
+
+/* Flexbox pour la barre de navigation */ 
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+
+/* Flexbox pour les widgets */ 
+.widget { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+} 
+    
+/* Grid pour les cartes */ 
+.cards-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
