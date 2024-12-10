@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid-item {
+    background-color: rgb(218, 162, 77);
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px 5px;
+    text-align: center;
+}
+
+.blog-layout {
+    display: grid;
+   grid-template-areas: 
+   "a"
+   "b"
+   "c"
+   "d";
+}
+
+.header {
+    background-color: rgb(245, 240, 207);
+}
+
+.sidebar{
+    background-color: rgb(219, 207, 146);
+}
+
+article{
+    background-color: rgb(236, 225, 168);
+}
+
+.footer {
+    background-color: rgb(246, 249, 194);
+}
