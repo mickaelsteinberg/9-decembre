@@ -1,0 +1,6 @@
+.logo{justify-content: left; } 
+.navbar .nav-links {justify-content: space-between;
+    display: flex; 
+    flex-direction : row; @media(max-width: 450px) {
+        flex-flow: column wrap;
+      }}
