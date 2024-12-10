@@ -1,0 +1,152 @@
+/** G2- Grid A.Grille basique **/
+
+*{
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+  }
+
+  li {
+    list-style: none;
+  }
+
+.grid-container{
+    display: grid;
+    /** grid-template-columns: repeat(2,1fr); **/
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 20px;
+    text-align: center;
+}
+
+.grid-container div{
+    background-color: bisque;
+    margin: 10px;
+}
+
+.gird-item{
+   
+}
+
+
+/** B.Layout blog **/
+
+.blog-layout{
+display: grid;
+grid-template-areas:
+"header header"
+"main-content sidebar"
+"footer footer";
+grid-row: auto 1fr auto;
+grid-template-columns: 1fr 300px;
+}
+
+.header{
+background-color: darkgreen;
+grid-area: header;
+color: white;
+height: 30%;
+width: 100%;
+padding: 2em;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav__links {
+    display: flex;
+  }
+
+.nav__links li a {
+    margin-left: 3vw;
+}
+
+
+
+.sidebar{
+    grid-area: sidebar;
+background-color: tomato;
+
+
+}
+
+.main-content{
+background-color: blanchedalmond;
+height: 70vh;
+padding: 40px 
+}
+
+.footer{
+    grid-area: footer;
+background-color: darkgreen;
+padding: 1em;
+color: white;
+
+}
+
+
+/*** C.Layout combiné Flexbox/Grid ***/
+
+.page-container{
+
+}
+
+
+.navbar{
+
+}
+
+.content{
+
+}
+
+.cards-grid{
+
+}
+
+.sidebar{
+
+}
+
+.widget{
+
+}
+
+
+.back-button{
+    height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+@media(max-width: 750px){
+    body{
+        grid-template-columns: 1fr;
+    }
+    .blog-layout{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar{
+       
+    }
+
+}
