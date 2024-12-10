@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: sans-serif;
+    background-color: burlywood;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Exo A */
+.grid-container {
+    height: 80vh;
+    border: 4px solid grey;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+    background-color: gray;
+    padding: 10px;
+}
+
+.grid-item {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 22px;
+    background-color: #99775C;
+}
+
+.grid-container2 {
+    height: 90vh;
+    border: 4px solid grey;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px; 
+    background-color: gray;
+    padding: 10px;
+}
+
+.item1a {
+    grid-column: 1 / 3;
+}
+
+.item2a {
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+}
+
+.item3a {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.item4a {
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+}
+
+/* Exo B */
+.blog-layout {
+    display: grid;
+    grid-template-areas:  "header header header"
+                          "main main side"
+                          "main main side"    
+                          "footer footer footer";
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;  
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background-color: #99775C;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main */
+.main-content {
+    grid-area: main;
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: side;
+    background-color: #9b5013;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: chocolate;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Exo C */
+
+/* Structure */
+.page-container {
+    display: grid;
+    grid-template-areas:  "header header header"
+                          "main main side"
+                          "main main side" 
+                          "main main side"    
+                          "footer footer footer";
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;  
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Header */
+.page-container .header {
+    grid-area: header;
+    background-color: #333130;
+    padding: 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+.navigation {
+    display: flex;
+    gap: 50px;
+}
+/* Main */
+.page-container .content {
+    grid-area: main;
+    background-color: bisque;
+    color: black;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 1fr 1fr ;
+}
+
+/* Side */
+.page-container .sidebar {
+    grid-area: side;
+    background-color: rgb(207, 161, 106);
+    color: black;
+}
+
+.widget {
+    display: flex;
+}
+
+/* Footer */
+.page-container .footer {
+    grid-area: footer;
+    background-color: #676563;
+}
+
+.footer {
+    display: flex;
+}
